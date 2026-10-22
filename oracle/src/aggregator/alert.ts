@@ -453,7 +453,6 @@ export function createAmbiguousTallyAlertSender(
   };
 }
 
-<<<<<<< HEAD
 // ---------------------------------------------------------------------------
 // Bond Reconciliation Alerts (Issue #573)
 // ---------------------------------------------------------------------------
@@ -628,7 +627,8 @@ async function deliverMonitoringAlertWebhook(
   logger?: Logger,
 ): Promise<void> {
   await deliverWebhookWithRetry(webhookUrl, payload, logger, "ipredict-oracle-monitoring-alerts/1.0");
-=======
+}
+
 /** Routes a detected betting pattern to review without intervening in a market. */
 export function createBetPatternAlertSender(
   webhookUrl: string | undefined,
@@ -664,5 +664,4 @@ export function createBetPatternAlertSender(
       });
     }
   };
->>>>>>> 4241d68 (Detect concentrated late betting patterns)
 }

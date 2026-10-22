@@ -1,6 +1,7 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import {
   getBetsByBettor,
+  getBetsByBettorPaginated,
   getBetsByMarketFromDb,
   getBetAnomalyReviewMetrics,
   getUnreviewedBetAnomalies,
@@ -177,7 +178,6 @@ describe('getBetsByBettor', () => {
     expect(result.bets).toEqual(mockRows);
   });
 });
-<<<<<<< HEAD
 
 describe("getBetsByBettorPaginated", () => {
   it("fetches a stable page and the total count using parameterized queries", async () => {
@@ -330,5 +330,3 @@ describe("getBetsByMarket", () => {
     expect(r2.bets[0].address).toBe("GADDR3");
   });
 });
-=======
->>>>>>> 4241d68 (Detect concentrated late betting patterns)

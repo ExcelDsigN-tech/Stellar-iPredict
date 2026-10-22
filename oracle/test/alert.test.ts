@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { describe, expect, it, vi, beforeEach } from "vitest";
 import { 
   createAlertRouter,
@@ -9,13 +8,7 @@ import {
   alertAggregateLag,
   alertCircuitBreakerOpen,
   THRESHOLDS,
-=======
-import { describe, expect, it, vi } from "vitest";
-import {
-  createWebhookAlertSender,
   createBetPatternAlertSender,
-  classifyAlertSeverity,
->>>>>>> 4241d68 (Detect concentrated late betting patterns)
 } from "../src/aggregator/alert.js";
 
 describe("alertBondDiscrepancy (Issue #573)", () => {
